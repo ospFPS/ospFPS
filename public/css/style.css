@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom,
+            rgba(255, 255, 255, 2),
+            rgba(255, 255, 255, 0.2)),
+        url("../assets/images/IMG_0059.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+.bar{
+    background: rgb(0, 0, 0);
+    text-align: center;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items:center;
+}
+nav img{
+    width: 500px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    bottom: x;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 15px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+    font-size: 40px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(0, 189, 202);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 45px;
+    
+}
+.text-box h2{
+    font-size: 45px;
+}
+.text-box h3{
+    font-size: 45px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+.hero-btn{
+    display:  inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid black;
+    background: rgb(0, 189, 202);
+    transition: 1s;
+}
+@media (max-width: 700px){
+    .text-box h1{
+        font-size: 40px;
+}
+    .nav-links ul li{
+        display: block;
+}
+    .text-box p{
+        font-size: 30px;
+    }
+    .nav-links{
+        position: absolute;
+        background:rgb(0, 189, 202);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+}
+      .nav .fa{  
+    display: block;
+      color: white;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+}
+}
+/*---about---*/
+        
+        .About {
+            bottom: 1vh;
+         font-size: 35px;
+            width: 80%;
+         padding-top: 100%;
+         position: absolute;
+        
+}
+        .top{
+            bottom: 10vh;
+         font-size: 30px;
+         font-weight: 600;
+         text-align: center;
+         
+}
+        .about{
+            left: 19vh;
+            bottom: 10vh;
+            width: 80%;
+         margin-top:auto;
+         text-align: center;
+         padding-top: 100px;
+         font-size: 20px;
+         position: relative;
+}
+
+        .Form{
+            font-size: 25px;
+          height: 300vh;
+          right: 20vh;
+          left: -140vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+        
+        }
+        .Picture img{
+            left: 10vh;
+            bottom: -24vh;
+            border-radius: 50%;
+            border: 10px;
+            position: absolute;
+        }
+        .Picture p{
+            left: 12vh;
+            bottom: -32vh;
+            position: absolute;
+        }
+        
+        .Picture_2 img{
+            left: 70vh;
+            bottom: -24vh;
+            border-radius: 50%;
+            border: 10px;
+            position: absolute;
+        }
+        .Picture_2 p{
+            left: 69vh;
+            bottom: -32vh;
+            position: absolute;
+        }
+        .Picture_3 img{
+            left: 130vh;
+            bottom: -24vh;
+            border-radius: 50%;
+            border: 10px;
+            position: absolute;
+        }
+        .Picture_3 p{
+            left: 127vh;
+            bottom: -32vh;
+            position: absolute;
+        }
+        .Bottom picture {
+            left: -100vh;
+            width: 100%;
+            position: absolute;
+        }
+        .B img{
+            min-height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(to bottom,
+                    rgba(255, 255, 255, 2),
+                    rgba(255, 255, 255, 0.2)),
+                url("../assets/images/background2.jpg");
+            background-size: cover;
+            position: absolute;
+        }
+      
+
+
+
+/* linear-gradient(
+        to bottom,
+        rgba(4,9,30,0,0.7),
+        rgba(4,9,30,0,0.7)), */
