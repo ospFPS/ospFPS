@@ -1,6 +1,8 @@
 module.exports = {
   "app_cfg": {
     "public_folder": "Edufold",
+    "ip_addr": "localhost",
+    "port": "8080",
     "options": {
       "dotfiles": "ignore",
       "etag": false,

@@ -4,7 +4,7 @@
   "description": "Analizes the health problem",
   "main": "index.js",
   "scripts": {
-    "serve": "node index.js"
+    "start": "node index.js"
   },
   "keywords": [
     "Health",
