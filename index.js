@@ -12,10 +12,17 @@
 	const _env_ = require("./env.js");
 
 	console.log("Connecting to MongoDB Database...");
-	const db = await MongoDB.MongoClient.connect(
+	const mongoClient = await MongoDB.MongoClient.connect(
 		_env_.mongo_db.client_url,
 		_env_.mongo_db.options
 	);
+	const db = mongoClient.db("local");
+	const userData = await db.collection("s");
+	const serverStat = await userData.stats();
+
+	console.log(`database stats: ${serverStat.ok?"ok" : "failing"}`);
+	if (!serverStat.ok)
+		throw new Error("Database failing! " + JSON.stringify(serverStat));
 
 	console.log("Initializeing Express.js app instance...");
 	const App = Express();
